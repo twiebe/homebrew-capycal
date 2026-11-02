@@ -2,23 +2,23 @@
 class Capycal < Formula
   desc "Calendar sync that knows how to keep a secret"
   homepage "https://capycal.app"
-  version "0.3.0"
+  version "0.3.1"
   license "GPL-3.0-only"
 
   on_macos do
     depends_on arch: :arm64
     url "https://github.com/twiebe/capycal/releases/download/v#{version}/capycal-v#{version}-aarch64-apple-darwin.tar.gz"
-    sha256 "f29ce3411353127c7dceef6fa78990b1ced649094a8fac58047afbde1f4e3abb"
+    sha256 "2032b71094c85246f4e8fa43a152dd15ab0881c195621fc57840958ba6da04d0"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/twiebe/capycal/releases/download/v#{version}/capycal-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "42d590ff036c6a7ca36e2e5af0cfaf6e8fa1055cd04d7986016c7c6d70c6d42f"
+      sha256 "de0b7dc47eaeca13b8012eabb820b0f49a6dc129b80268d74009cc29dcfd4535"
     end
     on_arm do
       url "https://github.com/twiebe/capycal/releases/download/v#{version}/capycal-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "1248b8bf99433992f18a154bb111a1a0fc3b35e2e2c371d664be9f28bca3546c"
+      sha256 "b573584ad433beabab64ec05eb622b8f64a13ee15f1f0dfc6ca10b2fa310d3c9"
     end
   end
 
